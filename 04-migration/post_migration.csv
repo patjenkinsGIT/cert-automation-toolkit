@@ -1,0 +1,5 @@
+host,port,expected_ca,issuer,serial,fingerprint,not_after
+api.example.com,443,Sectigo,Sectigo,0x9c:a1:2b:3c:4d:5e:6f:70:81:92,4a:7b:2c:8d:1e:9f:3a:6b:5c:0d:2e:4f:6a:8b:1c:3d,2027-04-11
+www.example.com,443,Sectigo,Sectigo,0x9c:a2:3c:4d:5e:6f:70:81:92:a3,5b:8c:3d:9e:2f:0a:4b:7c:6d:1e:3f:5a:7b:9c:2d:4e,2027-04-11
+legacy.example.com,443,Sectigo,Entrust,0x71:2a:88:0c:9e:44:11:23:aa:03,,2026-11-02
+vpn.example.com,443,Sectigo,Sectigo,0x9c:a3:4d:5e:6f:70:81:92:a3:b4,6c:9d:4e:0f:3a:1b:5c:8d:7e:2f:4a:6b:8c:0d:3e:5f,2027-04-11

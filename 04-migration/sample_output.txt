@@ -1,0 +1,13 @@
+$ python3 certmove.py verify --inventory post_migration.csv
+
+[ MIGRATION VERIFICATION — Entrust -> Sectigo ]
+
+  api.example.com:443        PASS  issuer=Sectigo  serial=0x9c:a1:...  not_after=2027-04-11
+  www.example.com:443        PASS  issuer=Sectigo  serial=0x9c:a2:...  not_after=2027-04-11
+  legacy.example.com:443     FAIL  issuer=Entrust  -- still on old CA, not replaced
+  vpn.example.com:443        PASS  issuer=Sectigo  serial=0x9c:a3:...  not_after=2027-04-11
+
+  Summary: 3 PASS, 1 FAIL, 0 unreachable.
+  Evidence log written: evidence_log.csv  (sha256: 4a7b2c...)
+
+  -> 1 endpoint still on the old CA. Drive that to zero before retiring trust.

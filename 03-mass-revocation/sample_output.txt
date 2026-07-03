@@ -1,0 +1,16 @@
+$ python3 massrev.py status --plan plan.csv
+
+[ MASS REVOCATION BURNDOWN — Entrust deadline 2026-12-31 ]
+
+  Total in scope:      842 certificates
+  Replaced:            618 (73%)
+  In progress:          47
+  Not started:         177
+  Time remaining:      120h
+
+  Priority breakdown (not started):
+    P0 public-facing prod:     12  <-- DO THESE NEXT
+    P1 internal prod:          54
+    P2 non-prod:              111
+
+  [#########################......]  73%

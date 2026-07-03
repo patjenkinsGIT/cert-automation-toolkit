@@ -1,0 +1,14 @@
+$ python3 certrecon.py inspect revoked.badssl.com:443 --check-revocation
+
+Host: revoked.badssl.com:443
+  Subject:     CN=revoked.badssl.com
+  Issuer:      CN=DigiCert SHA2 Secure Server CA
+  Not Before:  2024-03-12
+  Not After:   2026-03-12  (in 287 days)
+  Key:         RSA-2048
+  SANs:        revoked.badssl.com
+  OCSP:        REVOKED  (reason: superseded)
+  CRL:         REVOKED
+  -> Status:   REVOKED (CRL + OCSP agree)
+
+1 host inspected, 1 REVOKED.

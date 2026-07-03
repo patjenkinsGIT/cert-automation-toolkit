@@ -1,0 +1,14 @@
+$ python3 certfire.py diagnose expired.badssl.com:443
+
+[ DIAGNOSIS ]
+  Host:          expired.badssl.com:443
+  Verdict:       EXPIRED
+  Expired on:    2015-04-09  (4063 days ago)
+  Issuer:        CN=COMODO RSA Domain Validation Secure Server CA
+  Subject:       CN=*.badssl.com
+
+[ STAGE THIS NEXT ]
+  python3 certfire.py stage expired.badssl.com:443 --out ./replacement
+  -> writes replacement/key.pem, replacement/req.csr, replacement/CHECKLIST.md
+
+Estimated time-to-recovery if you have a CA on standby: ~15 minutes.
