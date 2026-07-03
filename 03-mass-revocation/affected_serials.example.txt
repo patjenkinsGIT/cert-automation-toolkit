@@ -1,0 +1,17 @@
+# affected_serials.example.txt
+# Format of the affected-serial list a CA publishes during a mass-revocation
+# event: one certificate serial per line, matching the `serial` column in your
+# inventory CSV.
+#
+# massrev currently scopes the burndown with --ca <issuer>; cross-check this
+# list against plan.csv to confirm nothing the CA flagged is missing:
+#   grep -F -f affected_serials.example.txt plan.csv
+#
+# These serials appear in sample_inventory.csv:
+0x7c:f7:e1:b8:56:9e:64:5e:b3:ce
+0x07:33:9f:d2:08:c9:34:45:b0:e5
+0x9e:c0:fc:99:65:74:7e:23:f2:d2
+0xc4:94:92:28:1e:64:ad:f4:36:86
+0x4e:7f:53:88:76:78:f4:e8:42:01
+0xb9:05:7a:00:6b:bf:5c:4a:ff:fb
+0xc3:34:7a:6d:32:7b:4e:03:84:88

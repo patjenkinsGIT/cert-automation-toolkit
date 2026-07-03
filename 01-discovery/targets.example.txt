@@ -1,0 +1,15 @@
+# targets.example.txt — one host:port per line.
+# Copy to targets.txt, replace with your estate, then:
+#   python3 certrecon.py sweep --targets targets.txt --out inventory.csv --check-revocation
+#
+# These badssl.com hosts are safe public test endpoints:
+revoked.badssl.com:443
+expired.badssl.com:443
+wrong.host.badssl.com:443
+self-signed.badssl.com:443
+sha256.badssl.com:443
+# Internal examples — replace with real hosts:
+# api.internal.example.com:443
+# vpn.example.com:443
+# mail.example.com:465
+# ldaps.corp.example.com:636

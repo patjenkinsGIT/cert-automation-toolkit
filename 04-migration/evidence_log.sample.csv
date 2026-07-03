@@ -1,0 +1,5 @@
+host,port,verdict,issuer,serial,fingerprint,not_after,timestamp,row_hash
+api.example.com,443,PASS,Sectigo,0x9c:a1:2b:3c:4d:5e:6f:70:81:92,4a:7b:2c:8d:1e:9f:3a:6b:5c:0d:2e:4f:6a:8b:1c:3d,2027-04-11,2026-07-03T14:22:07.418256+00:00,4c9c2b2db97488731cf43f37d8a942bd838e89a911fbc93af2c38616d980aeb8
+www.example.com,443,PASS,Sectigo,0x9c:a2:3c:4d:5e:6f:70:81:92:a3,5b:8c:3d:9e:2f:0a:4b:7c:6d:1e:3f:5a:7b:9c:2d:4e,2027-04-11,2026-07-03T14:22:07.418256+00:00,e3f6a9ba985e2e55b0ae479449084c74ec5d7128a98ca3fea7ce99d0b26c41ef
+legacy.example.com,443,FAIL,Entrust,0x71:2a:88:0c:9e:44:11:23:aa:03,,2026-11-02,2026-07-03T14:22:07.418256+00:00,93754fe20733f402d36a20330e0cb24524dba2ba09c5aba885a3b42324187284
+vpn.example.com,443,PASS,Sectigo,0x9c:a3:4d:5e:6f:70:81:92:a3:b4,6c:9d:4e:0f:3a:1b:5c:8d:7e:2f:4a:6b:8c:0d:3e:5f,2027-04-11,2026-07-03T14:22:07.418256+00:00,7d0a3446e0b8b6561ca57102cefb09e62e41f84aee402fc6d61c0a7a6a423b41
